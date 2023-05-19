@@ -5,7 +5,7 @@ export const loginUser = createAsyncThunk(
 	"user/details",
 	async ({ email, password }) => {
 		const res = await axios.post(
-			process.env.REACT_APP_BACKEND_URL + "user/login",
+			process.env.REACT_APP_BACKEND_URL + "/user/login",
 			{
 				email,
 				password,
